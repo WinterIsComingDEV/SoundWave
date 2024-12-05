@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Jockey+One&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+
+:root{
+    --roxoPrincipal: #420094;
+    --preto: #000000;
+    --marrom: #1E0101;
+    --cinza: #6F6F6F;
+}
+h1{
+    font-family: "Jockey One", sans-serif;
+}
+
+.menu{
+    width: 14%;
+    height: 100vh;
+    background-color: #ADACE9;
+}
+.menu h1{
+    padding: 15px;
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+    color: var(--roxoPrincipal) 
+}
+.menu nav ul li{
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    margin: 10px;
+}
+.menu nav ul li img{
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+}
+.menu nav ul li a{
+    color: var(--preto);
+    text-decoration: none;
+    font-family: "Jockey One", sans-serif;
+    font-size: 2rem
+}
+
+.playlists{
+    margin-top: 35px
+}
+
+.playlists h1{
+    color: var(--preto);
+    font-size: 2rem
+}
+
+.quadrado{
+    width: 50px;
+    height: 50px;
+    background-color: var(--marrom);
+    margin-right: 5px;
+}
+.playlist{
+    margin-left: 25px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: "Jockey One", sans-serif;
+
+}
+.playlist h3{
+    color: var(--cinza)
+}
