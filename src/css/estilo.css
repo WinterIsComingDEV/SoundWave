@@ -26,31 +26,7 @@ h1{
 /*
     Fazendo o header da home
 */
-header{
-    display: flex;
-    margin-bottom: 80vh;
-}
-#cassetemascote{
-    width: 65vh;
-    height: 48vh;
-    padding-bottom: 22vh;
-}
-#infoheader{
-    display: flex;
-    padding-left: 10vh;
-    height: 6vh;
-    justify-content: right;
-}
-#soundwave{
-    padding-left: 50vh;
-    font-size: 5rem;
-    padding-top: 2vh;
-}
-.logonome{
-    display:Flex;
-    width: 150vh;
-    background-color: var(--roxopastel);    
-}
+
 
 /* fim do header
 */
@@ -61,13 +37,14 @@ header{
 }
 .menu h1{
     padding: 3vh;
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: var(--roxoPrincipal) 
 }
 .menu nav ul li{
     display:flex;
     flex-direction: row;
     align-items:center;
+    padding-left: 25px;
 }
 .menu nav ul li img{
     width: 5vh;
@@ -112,14 +89,63 @@ header{
 }
 
 #soundwaveabalateral{
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
-.click{
-    transition: 1s;
+.click {
+    transition: all 1s ease;
+}
+.click a{
+    transition: all 1s ease;
 }
 .click:hover{
-    font-size: 2.5rem;
     background-color: var(--roxoPrincipal);
     color: var(--roxopastel);
+}
+
+.click:hover a{
+    font-size: 3rem;
+}
+
+header{
+    display: flex;
+    width: 100vw;
+    height: 20vh;
+}
+.logoholder {
+    display: flex; 
+    width: 100%;  
+    height: 100%;  
+}
+
+.quadradologo{
+    padding-left: 50px;
+    display: flex;
+    width: 80%;
+    height: 20vh;
+    background-color: var(--roxopastel);
+    align-items: center;
+    justify-content: center;
+}
+.triangulo{
+    width: 20%;
+    height: 20vh;
+    background: linear-gradient(to bottom right,var(--roxopastel) 50%, white 50%);
+    flex: 1;
+}
+#logo{
+    width: 250px;;
+    height: 100%;
+}
+
+.titulo{
+    color: var(--roxoPrincipal);
+    font-size: 7rem;
+    margin-right: 50px;
+    margin-top: 30px;
+}
+#info{
+    position: fixed;
+    right: 70px;
+    top: 0;
 }
