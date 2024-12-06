@@ -4,7 +4,7 @@
 *{
     padding: 0;
     margin: 0;
-    
+    box-sizing: border-box;
 }
 
 :root{
@@ -12,32 +12,64 @@
     --preto: #000000;
     --marrom: #1E0101;
     --cinza: #6F6F6F;
+    --roxopastel: rgba(240, 223, 255, 1);
 }
+body{
+    display:flex;
+    height: 100vh;
+}
+
 h1{
     font-family: "Jockey One", sans-serif;
 }
+/*
+    Fazendo o header da home
+*/
+header{
+    display: flex;
+    margin-bottom: 80vh;
+}
+#cassetemascote{
+    width: 35vh;
+    height: 18vh;
+}
+#infoheader{
+    display: flex;
+    padding-left: 10vh;
+    height: 6vh;
+    justify-content: right;
+}
+#soundwave{
+    padding-left: 20vh;
+    font-size: 10vh;
+    padding-top: 2vh;
+}
+.logonome{
+    display:Flex;
+    width: 150vh;
+    background-color: var(--roxopastel);    
+}
+/* fim do header
+*/
 
 .menu{
-    width: 14%;
-    height: 100vh;
+    width: 40vh;
     background-color: #ADACE9;
 }
 .menu h1{
-    padding: 15px;
+    padding: 3vh;
     font-size: 2.5rem;
-    margin-bottom: 25px;
     color: var(--roxoPrincipal) 
 }
 .menu nav ul li{
     display:flex;
     flex-direction: row;
     align-items:center;
-    margin: 10px;
 }
 .menu nav ul li img{
-    width: 35px;
-    height: 35px;
-    margin-right: 10px;
+    width: 5vh;
+    height: 5vh;
+    margin-right: 1vh;
 }
 .menu nav ul li a{
     color: var(--preto);
@@ -46,24 +78,25 @@ h1{
     font-size: 2rem
 }
 
-.playlists{
-    margin-top: 35px
+#playlists{
+    padding-top: 5vh;
 }
 
 .playlists h1{
     color: var(--preto);
-    font-size: 2rem
+    font-size: 2rem;
 }
 
 .quadrado{
-    width: 50px;
-    height: 50px;
+    width: 7vh;
+    height: 7vh;
     background-color: var(--marrom);
-    margin-right: 5px;
+    margin-right: 1vh;
 }
 .playlist{
-    margin-left: 25px;
-    margin-bottom: 15px;
+    width: 30vh;
+    margin-left: 2vh;
+    margin-bottom: 2vh;
     display: flex;
     flex-direction: row;
     align-items: center;
