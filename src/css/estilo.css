@@ -149,3 +149,25 @@ header{
     right: 70px;
     top: 0;
 }
+
+/*COMEÇANDO A BANNER */
+
+#banner{
+    display:flex;
+    flex-direction: column;
+    height: 55vh;
+    width: 180vh;
+    padding-left: 3vh;
+    padding-top: 3vh;
+}
+
+/*MAIS TOCADOS DA SEMANA*/
+.maistocados{
+    display: flex;
+    margin-left: 3vh;
+    margin-top: 7vh;
+    font-size: 2rem;
+}
+#seletor{
+    margin-left: 120vh;
+}
