@@ -13,6 +13,7 @@
     --marrom: #1E0101;
     --cinza: #6F6F6F;
     --roxopastel: rgba(240, 223, 255, 1);
+    --abalateral: rgba(173, 172, 233, 1);
 }
 body{
     display:flex;
@@ -30,8 +31,9 @@ header{
     margin-bottom: 80vh;
 }
 #cassetemascote{
-    width: 35vh;
-    height: 18vh;
+    width: 65vh;
+    height: 48vh;
+    padding-bottom: 22vh;
 }
 #infoheader{
     display: flex;
@@ -40,8 +42,8 @@ header{
     justify-content: right;
 }
 #soundwave{
-    padding-left: 20vh;
-    font-size: 10vh;
+    padding-left: 50vh;
+    font-size: 5rem;
     padding-top: 2vh;
 }
 .logonome{
@@ -49,12 +51,13 @@ header{
     width: 150vh;
     background-color: var(--roxopastel);    
 }
+
 /* fim do header
 */
 
 .menu{
-    width: 40vh;
-    background-color: #ADACE9;
+    width: 35vh;
+    background-color: var(--abalateral);
 }
 .menu h1{
     padding: 3vh;
@@ -75,7 +78,8 @@ header{
     color: var(--preto);
     text-decoration: none;
     font-family: "Jockey One", sans-serif;
-    font-size: 2rem
+    font-size: 2rem;
+    padding: 2vh;
 }
 
 #playlists{
@@ -105,4 +109,17 @@ header{
 }
 .playlist h3{
     color: var(--cinza)
+}
+
+#soundwaveabalateral{
+    font-size: 2rem;
+}
+
+.click{
+    transition: 1s;
+}
+.click:hover{
+    font-size: 2.5rem;
+    background-color: var(--roxoPrincipal);
+    color: var(--roxopastel);
 }
