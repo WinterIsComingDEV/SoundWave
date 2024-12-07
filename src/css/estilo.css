@@ -14,26 +14,26 @@
     --cinza: #6F6F6F;
     --roxopastel: rgba(240, 223, 255, 1);
     --abalateral: rgba(173, 172, 233, 1);
+    --fontefooter: white;
+    --rosa: rgb(245, 107, 137);
+    --azulclaro: rgb(61, 89, 243);
+    --roxopastel2: rgb(214, 110, 255);
 }
 body{
     display:flex;
+    flex-direction: column;
     height: 100vh;
 }
 
 h1{
     font-family: "Jockey One", sans-serif;
 }
-/*
-    Fazendo o header da home
-*/
-
-
-/* fim do header
-*/
 
 .menu{
     width: 35vh;
     background-color: var(--abalateral);
+    height: 100%;
+    position: fixed;
 }
 .menu h1{
     padding: 3vh;
@@ -101,12 +101,13 @@ h1{
 .click:hover{
     background-color: var(--roxoPrincipal);
     color: var(--roxopastel);
+    cursor: pointer;
 }
 
 .click:hover a{
-    font-size: 3rem;
+    font-size: 2.2rem;
 }
-
+/*FAZENDO O HEADER*/
 header{
     display: flex;
     width: 100vw;
@@ -149,26 +150,111 @@ header{
     right: 70px;
     top: 0;
 }
-<<<<<<< HEAD
-
+/*fim do header*/
 /*COMEÇANDO A BANNER */
-
 #banner{
     display:flex;
     flex-direction: column;
     height: 55vh;
-    width: 180vh;
-    padding-left: 3vh;
+    width: 200vh;
+    padding-left: 45vh;
     padding-top: 3vh;
 }
 
 /*MAIS TOCADOS DA SEMANA*/
 .maistocados{
     display: flex;
-    margin-left: 3vh;
+    margin-left: 37vh;
     margin-top: 7vh;
-    font-size: 2rem;
+    font-size: 1.8rem;
+    width: 190vh;
 }
 #seletor{
     margin-left: 120vh;
+}
+/*ALBUNS MAIS TOCADOS*/
+.imagemalbum{
+    width: 35vh;
+    height: 35vh;
+    transition: all 1s ease;
+}
+.imagemalbum:hover{
+    width: 37vh;
+    height: 37vh;
+}
+
+.albunsmaistocados{
+    display:flex;
+    justify-content: space-around;
+    margin-top: 10vh;
+    font-size: 1.4rem;
+    margin-left: 35vh;
+}
+.albunsmaistocados2{
+    display:flex;
+    margin-top: 10vh;   
+    justify-content: space-around;
+    font-size: 1.4rem;
+    margin-left: 35vh;
+}
+
+.album{
+    transition: all 0.7s ease;
+    margin: 0;
+    width:37vh;
+    height: 37vh;
+}
+.album:hover{
+    width: 38vh;
+    height: 45vh;
+    background-color: var(--roxoPrincipal);
+    margin-bottom: -30vh;
+    color: rgb(205, 189, 243);
+    cursor: pointer;
+}
+/* fim dos albuns mais tocados
+*/
+/*FOOTER
+*/
+footer{
+
+    background-color: var(--preto);
+    color: var(--fontefooter);
+    margin-left: 35vh;
+    margin-top: 15vh;
+}
+#cassetinhofooter{
+    width: 20vh;
+}
+.conteudofooter{
+    margin: 5vh;
+}
+.footermeio{
+    display:flex;
+    justify-content: center;
+    margin-left: 20vh;
+}
+.infomeio{
+    margin: 4vh;
+}
+.footerh1{
+    font-size: 2.5rem;
+    color: var(--azulclaro);
+}
+footer h2:hover{
+    color: var(--roxopastel2);
+    cursor: pointer;
+}
+/*
+fim do footer
+*/
+
+/*
+HOVER DA PLAYLIST
+*/
+
+.playlist:hover{
+    background-color: var(--roxoPrincipal);
+    cursor: pointer;
+    color: rgb(205, 189, 243);
 }
