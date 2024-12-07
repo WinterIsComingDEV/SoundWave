@@ -22,7 +22,7 @@
 body{
     display:flex;
     flex-direction: column;
-    height: 100vh;
+    height: 100%;
 }
 
 h1{
@@ -34,6 +34,8 @@ h1{
     background-color: var(--abalateral);
     height: 100%;
     position: fixed;
+    top: 0;
+    left: 0;
 }
 .menu h1{
     padding: center;
@@ -148,7 +150,7 @@ header{
     padding-left: 3vh;
 }
 #info{
-    position: fixed;
+    position: a;
     right: 70px;
     top: 0;
 }
@@ -158,31 +160,25 @@ header{
     display:flex;
     flex-direction: column;
     height: 55vh;
-    width: 200vh;
-    padding-left: 45vh;
+    width: 97vw;
+    padding-left: 20vw;
     padding-top: 3vh;
 }
 
 /*MAIS TOCADOS DA SEMANA*/
 .maistocados{
     display: flex;
-    margin-left: 37vh;
+    margin-left: 20vw;
     margin-top: 7vh;
     font-size: 1.8rem;
-    width: 190vh;
+    width: 500px;
 }
-#seletor{
-    margin-left: 120vh;
-}
+
 /*ALBUNS MAIS TOCADOS*/
 .imagemalbum{
-    width: 35vh;
+    width: 18vw;
     height: 35vh;
     transition: all 1s ease;
-}
-.imagemalbum:hover{
-    width: 37vh;
-    height: 37vh;
 }
 
 .albunsmaistocados{
@@ -203,11 +199,11 @@ header{
 .album{
     transition: all 0.7s ease;
     margin: 0;
-    width:37vh;
+    width:18vw;
     height: 37vh;
 }
 .album:hover{
-    width: 38vh;
+    width: 18vw;
     height: 45vh;
     background-color: var(--roxoPrincipal);
     margin-bottom: -30vh;
@@ -219,7 +215,9 @@ header{
 /*FOOTER
 */
 footer{
-
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     background-color: var(--preto);
     color: var(--fontefooter);
     margin-left: 35vh;
@@ -229,6 +227,10 @@ footer{
     width: 20vh;
 }
 .conteudofooter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
     margin: 5vh;
 }
 .footermeio{
@@ -246,6 +248,11 @@ footer{
 footer h2:hover{
     color: var(--roxopastel2);
     cursor: pointer;
+}
+.footerdireita{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 /*
 fim do footer
