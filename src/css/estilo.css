@@ -121,15 +121,15 @@ header{
 .quadradologo{
     padding-left: 50px;
     display: flex;
-    width: 80%;
-    height: 20vh;
+    width: 90%;
+    height: 15vh;
     background-color: var(--roxopastel);
     align-items: center;
     justify-content: center;
 }
 .triangulo{
-    width: 20%;
-    height: 20vh;
+    width: 10%;
+    height: 15vh;
     background: linear-gradient(to bottom right,var(--roxopastel) 50%, white 50%);
     flex: 1;
 }
@@ -149,6 +149,7 @@ header{
     right: 70px;
     top: 0;
 }
+<<<<<<< HEAD
 
 /*COMEÇANDO A BANNER */
 
