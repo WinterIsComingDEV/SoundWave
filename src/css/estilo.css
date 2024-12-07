@@ -36,7 +36,8 @@ h1{
     position: fixed;
 }
 .menu h1{
-    padding: 3vh;
+    padding: center;
+    padding-left: 2vh;
     font-size: 3rem;
     color: var(--roxoPrincipal) 
 }
@@ -137,13 +138,14 @@ header{
 #logo{
     width: 250px;;
     height: 100%;
+    padding-left: 3vh;
+    padding-bottom: 1vh;
 }
 
 .titulo{
     color: var(--roxoPrincipal);
     font-size: 7rem;
-    margin-right: 50px;
-    margin-top: 30px;
+    padding-left: 3vh;
 }
 #info{
     position: fixed;
