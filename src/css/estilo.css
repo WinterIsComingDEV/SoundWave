@@ -158,7 +158,7 @@ header{
     display:flex;
     flex-direction: column;
     height: 55vh;
-    width: 200vh;
+    width: 200vw;
     padding-left: 45vh;
     padding-top: 3vh;
 }
@@ -169,19 +169,19 @@ header{
     margin-left: 37vh;
     margin-top: 7vh;
     font-size: 1.8rem;
-    width: 190vh;
+    width: 190vw;
 }
 #seletor{
     margin-left: 120vh;
 }
 /*ALBUNS MAIS TOCADOS*/
 .imagemalbum{
-    width: 35vh;
+    width: 35vw;
     height: 35vh;
     transition: all 1s ease;
 }
 .imagemalbum:hover{
-    width: 37vh;
+    width: 37vw;
     height: 37vh;
 }
 
@@ -203,11 +203,11 @@ header{
 .album{
     transition: all 0.7s ease;
     margin: 0;
-    width:37vh;
+    width:37vw;
     height: 37vh;
 }
 .album:hover{
-    width: 38vh;
+    width: 38vw;
     height: 45vh;
     background-color: var(--roxoPrincipal);
     margin-bottom: -30vh;
@@ -226,7 +226,7 @@ footer{
     margin-top: 15vh;
 }
 #cassetinhofooter{
-    width: 20vh;
+    width: 20vw;
 }
 .conteudofooter{
     margin: 5vh;
