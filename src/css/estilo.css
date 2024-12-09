@@ -267,3 +267,7 @@ HOVER DA PLAYLIST
     cursor: pointer;
     color: rgb(205, 189, 243);
 }
+a{
+    text-decoration: none;
+    color: inherit;
+}
