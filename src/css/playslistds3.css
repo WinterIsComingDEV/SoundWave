@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Jockey+One&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --roxoPrincipal: #420094;
+    --preto: #000000;
+    --marrom: #1E0101;
+    --cinza: #6F6F6F;
+    --roxopastel: rgba(240, 223, 255, 1);
+    --abalateral: rgba(173, 172, 233, 1);
+    --fontefooter: white;
+    --rosa: rgb(245, 107, 137);
+    --azulclaro: rgb(61, 89, 243);
+    --roxopastel2: rgb(214, 110, 255);
+}
+body{
+    display:flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+h1{
+    font-family: "Jockey One", sans-serif;
+}
+
+.menu{
+    width: 35vh;
+    background-color: var(--abalateral);
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.menu h1{
+    padding: center;
+    padding-left: 2vh;
+    font-size: 3rem;
+    color: var(--roxoPrincipal) 
+}
+.menu nav ul li{
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    padding-left: 25px;
+}
+.menu nav ul li img{
+    width: 5vh;
+    height: 5vh;
+    margin-right: 1vh;
+}
+.menu nav ul li a{
+    color: var(--preto);
+    text-decoration: none;
+    font-family: "Jockey One", sans-serif;
+    font-size: 2rem;
+    padding: 2vh;
+}
+
+#playlists{
+    padding-top: 5vh;
+}
+
+.playlists h1{
+    color: var(--preto);
+    font-size: 2rem;
+}
+
+.quadrado{
+    width: 7vh;
+    height: 7vh;
+    background-color: var(--marrom);
+    margin-right: 1vh;
+}
+.playlist{
+    width: 30vh;
+    margin-left: 2vh;
+    margin-bottom: 2vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: "Jockey One", sans-serif;
+
+}
+.playlist h3{
+    color: var(--cinza)
+}
+
+#soundwaveabalateral{
+    font-size: 3rem;
+}
+
+.click {
+    transition: all 1s ease;
+}
+.click a{
+    transition: all 1s ease;
+}
+.click:hover{
+    background-color: var(--roxoPrincipal);
+    color: var(--roxopastel);
+    cursor: pointer;
+}
+
+.click:hover a{
+    font-size: 2.2rem;
+}
+/*FAZENDO O HEADER*/
+header{
+    display: flex;
+    width: 100vw;
+    height: 20vh;
+}
+.logoholder {
+    display: flex; 
+    width: 100%;  
+    height: 100%;  
+}
+
+.quadradologo{
+    padding-left: 50px;
+    display: flex;
+    width: 90%;
+    height: 15vh;
+    background-color: var(--roxopastel);
+    align-items: center;
+    justify-content: center;
+}
+.triangulo{
+    width: 10%;
+    height: 15vh;
+    background: linear-gradient(to bottom right,var(--roxopastel) 50%, white 50%);
+    flex: 1;
+}
+#logo{
+    width: 250px;;
+    height: 100%;
+    padding-left: 3vh;
+    padding-bottom: 1vh;
+}
+
+.titulo{
+    color: var(--roxoPrincipal);
+    font-size: 7rem;
+    padding-left: 3vh;
+}
+#info{
+    position: a;
+    right: 70px;
+    top: 0;
+}
+/*fim do header*/
+/*COMEÇANDO A BANNER */
+#banner{
+    display:flex;
+    flex-direction: column;
+    height: 55vh;
+    width: 97vw;
+    padding-left: 20vw;
+    padding-top: 3vh;
+}
+
+/*MAIS TOCADOS DA SEMANA*/
+.maistocados{
+    display: flex;
+    margin-left: 20vw;
+    margin-top: 7vh;
+    font-size: 1.8rem;
+    width: 500px;
+}
+
+/*ALBUNS MAIS TOCADOS*/
+.imagemalbum{
+    width: 18vw;
+    height: 35vh;
+    transition: all 1s ease;
+}
+
+.albunsmaistocados{
+    display:flex;
+    justify-content: space-around;
+    margin-top: 10vh;
+    font-size: 1.4rem;
+    margin-left: 35vh;
+}
+.albunsmaistocados2{
+    display:flex;
+    margin-top: 10vh;   
+    justify-content: space-around;
+    font-size: 1.4rem;
+    margin-left: 35vh;
+}
+
+.album{
+    transition: all 0.7s ease;
+    margin: 0;
+    width:18vw;
+    height: 37vh;
+}
+.album:hover{
+    width: 18vw;
+    height: 45vh;
+    background-color: var(--roxoPrincipal);
+    margin-bottom: -30vh;
+    color: rgb(205, 189, 243);
+    cursor: pointer;
+}
+/* fim dos albuns mais tocados
+*/
+/*FOOTER
+*/
+footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--preto);
+    color: var(--fontefooter);
+    margin-left: 35vh;
+    margin-top: 15vh;
+}
+#cassetinhofooter{
+    width: 20vh;
+}
+.conteudofooter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 5vh;
+}
+.footermeio{
+    display:flex;
+    justify-content: center;
+    margin-left: 20vh;
+}
+.infomeio{
+    margin: 4vh;
+}
+.footerh1{
+    font-size: 2.5rem;
+    color: var(--azulclaro);
+}
+footer h2:hover{
+    color: var(--roxopastel2);
+    cursor: pointer;
+}
+.footerdireita{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*
+fim do footer
+*/
+
+/*
+HOVER DA PLAYLIST
+*/
+
+.playlist:hover{
+    background-color: var(--roxoPrincipal);
+    cursor: pointer;
+    color: rgb(205, 189, 243);
+}
