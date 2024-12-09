@@ -18,7 +18,7 @@
 }
 /*Coloca o imagem no vody*/
 body{
-    background-image: url(/src/assets/imagens/loginback.jpg);
+    background-image: url(../assets/imagens/loginback.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
