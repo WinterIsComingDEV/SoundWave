@@ -5,13 +5,25 @@ const atual = document.getElementById('atual')
 const maximo = document.getElementById('duracao')
 
 let musica = new Audio();
-let duracao, mudando, musicaPosicao, albumAtual;
+let duracao, mudando, musicaPosicao, albumAtual, divAntiga;
 //objeto que guarda arrays
+
 const albuns = {
   "persona3" : [
     './src/assets/musicas/persona3/FullMoon.mp3',
     './src/assets/musicas/persona3/coloryournight.mp3',
     './src/assets/musicas/persona3/itsgoingdown.mp3'
+  ],
+  "ds3": [
+    './src/assets/musicas/ds3/premonition.mp3',
+    './src/assets/musicas/ds3/prologue.mp3',
+    './src/assets/musicas/ds3/odk.mp3'
+  ],
+  "undertale":[
+    './src/assets/musicas/undertale/megalovania.mp3',
+    './src/assets/musicas/undertale/fallendown.mp3',
+    './src/assets/musicas/undertale/ruins.mp3',
+
   ]
 }
 
@@ -28,14 +40,22 @@ function tocar() {
   }
 }
 
-function trocar(album, posicao){
+function trocar(album, posicao, objeto){
   musica.src = albuns[album][posicao]; //Troca a musica
   albumAtual = album; //troca a variavel do album
   musicaPosicao = posicao; //troca a variavel da posicao da musica
   musica.play();
 
   pausar.src = "./src/assets/imagens/icone/pause.svg"
+  let div = objeto.parentElement; // pega o parente do elemento no caso a div
+  
+  div.style.backgroundColor = "var(--whitegray)"; // troca a cor da div
+  if(divAntiga) // ve se a divantiga tem um valor pra poder mudar
+  {
+    divAntiga.style.backgroundColor = "var(--cinzaplayer)";
 
+  }
+  divAntiga = div;
 }
 
 
@@ -81,6 +101,13 @@ function proximo(){
     musica.src = albuns[albumAtual][musicaPosicao + 1] //altera a musica
     musica.play(); //faz a musica tocar
     musicaPosicao += 1; //muda a poscição da array
+
+    let div = document.getElementById('musica' + musicaPosicao)
+    div.style.backgroundColor = "var(--whitegray)"; // troca a cor da div
+    divAntiga.style.backgroundColor = "var(--cinzaplayer)";
+    divAntiga = div;
+
+
   }
 }
 function anterior(){
@@ -88,5 +115,23 @@ function anterior(){
     musica.src = albuns[albumAtual][musicaPosicao - 1] //altera a musica
     musica.play(); //faz a musica tocar
     musicaPosicao -= 1.; //muda a poscição da array
+
+    let div = document.getElementById('musica' + musicaPosicao)
+    div.style.backgroundColor = "var(--whitegray)"; // troca a cor da div
+    divAntiga.style.backgroundColor = "var(--cinzaplayer)";
+    divAntiga = div;
   }
 }
+musica.addEventListener('ended', function(){ // quando a musica acabar dar play no proximo
+  if(musicaPosicao < albuns[albumAtual].length -1){ //verifica se a posicao da musica n passa do limite (o -1 é pq a array comeca em 0)
+    musica.src = albuns[albumAtual][musicaPosicao + 1] //altera a musica
+    musica.play(); //faz a musica tocar
+    musicaPosicao ++; //muda a poscição da array
+
+    let div = document.getElementById('musica' + musicaPosicao) //pega a div da musica
+    div.style.backgroundColor = "var(--whitegray)"; // troca a cor da div
+    divAntiga.style.backgroundColor = "var(--cinzaplayer)";
+    divAntiga = div;
+    console.log(musicaPosicao)
+  }
+})

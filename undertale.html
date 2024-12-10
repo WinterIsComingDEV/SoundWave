@@ -73,33 +73,33 @@
     <!-- FIM DO HEADER   -->
     <main>
         <!--FAZENDO O BANNER-->
-        <div>
-        <h2 id="generoplaylist">Metroidvania</h2>
-        <div id="infoplaylist">
-        <h2 id="infoplaylist">Lançamento:2015</h2>
-        <h2>Duração:1H30m</h2>    
+        <div class="infomusica">
+            <h2>*RPG *Indie</h2>
+            <div class="infomusicadireita">
+                <H2>Lançamento: 2015</H2>
+                <h2>Duração:2H10m</h2>
+            </div>
         </div>
         <div>
-
-        </div>
+            <img id="banner" src="./src/assets/gif/undertale.gif">
         </div>
        <!--fim do banner-->
         <div class="maistocados">
             <h1>Músicas</h1>
         </div>
         <section id="musicasplaylist">
-            <div class="listadasmusicas">
-                <a class="playmusic"><img src="./src/assets/imagens/icone/iconeplay.png"></a>
+            <div class="listadasmusicas" id="musica0">
+                <button class="playmusic" onclick="trocar('undertale', 0, this)"><img src="./src/assets/imagens/icone/play.svg"></button>
                 <h1 class="titulomusica">MEGALOVANIA</h1>
                 <h1 class="tempomusica">2:36m</h1>
             </div>
-            <div class="listadasmusicas">
-                <a class="playmusic"><img src="./src/assets/imagens/icone/iconeplay.png"></a>
+            <div class="listadasmusicas" id="musica1">
+                <button class="playmusic" onclick="trocar('undertale', 1, this)"><img src="./src/assets/imagens/icone/play.svg"></button>
                 <h1 class="titulomusica">Fallen Down</h1>
                 <h1 class="tempomusica">0:57m</h1>
             </div>
-            <div class="listadasmusicas">
-                <a class="playmusic"><img src="./src/assets/imagens/icone/iconeplay.png"></a>
+            <div class="listadasmusicas" id="musica2">
+                <button class="playmusic" onclick="trocar('undertale', 2, this)"><img src="./src/assets/imagens/icone/play.svg"></button>
                 <h1 class="titulomusica">Ruins</h1>
                 <h1 class="tempomusica">3:48m</h1>
             </div>
@@ -136,6 +136,34 @@
             </section>
     </section>
 </footer>
+<div class="player">
+    <div class="playerfuncional">
+        <div class="botoesplayer">
+            <button class="botaoplayer" onclick="anterior()">
+                <img src="./src/assets/imagens/icone/back.svg">
+            </button>
+            <button class="botaoplayer" onclick="retroceder()">
+                <img src="./src/assets/imagens/icone/rewind.svg">
+            </button>
+            <button class="botaoplayer" onclick="tocar()">
+                <img src="./src/assets/imagens/icone/play.svg" id="pausar">
+            </button>
+            <button class="botaoplayer" onclick="avancar()">
+                <img src="./src/assets/imagens/icone/next.svg">
+            </button>
+            <button class="botaoplayer" onclick="proximo()">
+                <img src="./src/assets/imagens/icone/foward.svg">
+            </button>
+        </div>
+        <div class="barraprogresso">
+            <h3 id="atual">0:00</h3>
+            <input type="range" id="progressbar" value=0>
+            <h3 id="duracao">9:99</h3>
+        </div>
+
+    </div>
+</div>
+<script src="./src/js/album.js"></script>
  
 </body>
 </html>
