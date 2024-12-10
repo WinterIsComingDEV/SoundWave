@@ -72,16 +72,15 @@
 
     <!-- FIM DO HEADER   -->
     <main>
-        <div>
-        <!--banner-->
-        <h2 id="generoplaylist">*JRPG*Aventura</h2>
-        <div id="infoplaylist">
-        <h2 id="infoplaylist">Lançamento:2023</h2>
-        <h2>Duração:2H32m</h2>    
+        <div class="infomusica">
+            <h2>*JRPG *Aventura</h2>
+            <div class="infomusicadireita">
+                <H2>Lançamento: 2023</H2>
+                <h2>Duração:2H32m</h2>
+            </div>
         </div>
         <div>
-        <img id="banner" src="./src/assets/gif/persona3gif.gif">
-        </div>
+            <img id="banner" src="./src/assets/gif/persona3gif.gif">
         </div>
         <!--fim do banner-->
         <div class="maistocados">
@@ -89,22 +88,49 @@
         </div>
         <section id="musicasplaylist">
             <div class="listadasmusicas">
-                <a class="playmusic"><img src="./src/assets/imagens/icone/iconeplay.png"></a>
+                <button class="playmusic" onclick="trocar('persona3', 0)"><img src="./src/assets/imagens/icone/play.svg"></button>
                 <h1 class="titulomusica">Full Moon Full Life</h1>
                 <h1 class="tempomusica">4:53m</h1>
             </div>
             <div class="listadasmusicas">
-                <a class="playmusic"><img src="./src/assets/imagens/icone/iconeplay.png"></a>
+                <button class="playmusic" onclick="trocar('persona3', 1)"><img src="./src/assets/imagens/icone/play.svg"></button>
                 <h1 class="titulomusica">Color Your Night</h1>
                 <h1 class="tempomusica">2:06m</h1>
             </div>
             <div class="listadasmusicas">
-                <a class="playmusic"><img src="./src/assets/imagens/icone/iconeplay.png"></a>
+                <button class="playmusic" onclick="trocar('persona3', 2)"><img src="./src/assets/imagens/icone/play.svg"></button>
                 <h1 class="titulomusica">It's Going Down Now</h1>
                 <h1 class="tempomusica">2:16m</h1>
             </div>
         </section>
-        
+<!--Player-->
+    <div class="player">
+        <div class="playerfuncional">
+            <div class="botoesplayer">
+                <button class="botaoplayer" onclick="anterior()">
+                    <img src="./src/assets/imagens/icone/back.svg">
+                </button>
+                <button class="botaoplayer" onclick="retroceder()">
+                    <img src="./src/assets/imagens/icone/rewind.svg">
+                </button>
+                <button class="botaoplayer" onclick="tocar()">
+                    <img src="./src/assets/imagens/icone/play.svg" id="pausar">
+                </button>
+                <button class="botaoplayer" onclick="avancar()">
+                    <img src="./src/assets/imagens/icone/next.svg">
+                </button>
+                <button class="botaoplayer" onclick="proximo()">
+                    <img src="./src/assets/imagens/icone/foward.svg">
+                </button>
+            </div>
+            <div class="barraprogresso">
+                <h3 id="atual">0:00</h3>
+                <input type="range" id="progressbar" value=0>
+                <h3 id="duracao">9:99</h3>
+            </div>
+
+        </div>
+    </div>
 
 
 
@@ -136,6 +162,6 @@
             </section>
     </section>
 </footer>
- 
+ <script src="./src/js/album.js"></script>
 </body>
 </html>
