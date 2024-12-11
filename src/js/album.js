@@ -15,9 +15,9 @@ const albuns = {
     './src/assets/musicas/persona3/itsgoingdown.mp3'
   ],
   "ds3": [
-    './src/assets/musicas/ds3/premonition.mp3',
-    './src/assets/musicas/ds3/prologue.mp3',
-    './src/assets/musicas/ds3/odk.mp3'
+    './src/assets/musicas/ds3/PontiffSu.mp3',
+    './src/assets/musicas/ds3/TwinP.mp3',
+    './src/assets/musicas/ds3/SoC.mp3'
   ],
   "undertale":[
     './src/assets/musicas/undertale/megalovania.mp3',
