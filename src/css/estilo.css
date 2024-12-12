@@ -25,6 +25,7 @@ body{
     height: 100%;
 }
 
+
 h1{
     font-family: "Jockey One", sans-serif;
 }
@@ -194,6 +195,7 @@ header{
 .slider-imagem img {
     width: 77vw;
     height: 55vh;
+    display: block;
 }
 
 @keyframes slide {
@@ -261,6 +263,7 @@ header{
     justify-content: space-around;
     font-size: 1.4rem;
     margin-left: 35vh;
+    padding-bottom: 4vw;
 }
 
 .album{
@@ -269,7 +272,8 @@ header{
     width:18vw;
     height: 37vh;
 }
-.album:hover{
+.album:hover
+{
     width: 18vw;
     height: 45vh;
     background-color: var(--roxoPrincipal);
@@ -284,14 +288,14 @@ header{
 footer{
     display: flex;
     flex-direction: row;
+    position:relative;
+    right: 1vw;
     align-items: center;
     background-color: var(--preto);
     color: var(--fontefooter);
-    margin-left: 35vh;
-    margin-top: 15vh;
 }
 #cassetinhofooter{
-    width: 20vh;
+    width: 15vh;
 }
 .conteudofooter{
     display: flex;
@@ -320,6 +324,7 @@ footer h2:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
 /*
 fim do footer
@@ -353,49 +358,59 @@ a{
 @media(max-width: 768px)
 {
 
-    .menu{
+    .menu
+    {
         top:0;
         left: 0;
         width: 55vw;
         z-index: 1;
         visibility: hidden;
     }
-    #soundwaveabalateral{
+    #soundwaveabalateral
+    {
         font-size: 2rem;
         margin-left: 35px;
     }
-    .menu button{ 
+    .menu button
+    { 
         width: 50px;
         height: 50px;  
         visibility: inherit;
         pointer-events: all;
     }
-    .menu button img{
+    .menu button img
+    {
         width: 50px;
         height: 50px;
     }
-    .menu nav ul li {
+    .menu nav ul li 
+    {
         font-size: 1.25rem;
         padding-left: 4vw;
     } 
-    .menu nav ul li a{
+    .menu nav ul li a
+    {
         font-size: 1.25rem;
         padding-left: 0vw;
     }
-    .menu nav ul li img{
+    .menu nav ul li img
+    {
         width: 10vw;
         height: 10vw;
         margin-right: 1vw;
     }
 
-    .playlists h1{
+    .playlists h1
+    {
         color: var(--preto);
         font-size: 1.5rem;
     }
-    #playlists{
+    #playlists
+    {
         padding-top: 2vh;
     }
-    .quadrado{
+    .quadrado
+    {
         width: 15vw;
         height: 7vh;
     }
@@ -403,11 +418,15 @@ a{
     {
         font-size: 1.25rem;
     }
-    .playlist-texto h3{
+    .playlist-texto h3
+    {
         font-size: 1rem;
     }
 
-
+    .maistocados
+    {
+        font-size: 1.5rem;
+    }
 
 
     main{
@@ -465,7 +484,112 @@ a{
         width: 90vw;
         height: 25vh;
     }
+
+    .maistocados
+    {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .album h1
+    {
+        font-size: small;
+    }
+    .album img 
+    {
+        align-content: space-between;
+    }
+    .imagemalbum
+    {
+        width: 100%;
+        height: 50%;
+    }
+    .album     
+    {
+        height: 50%;
+    }
+
+    .albunsmaistocados 
+    {
+        display: flex;
+        margin-left: 40px;
+    }
+
+    .albunsmaistocados2
+    {
+        display: flex;
+        margin-left: 40px;
+    }
+
+    .albunsmaistocados img
+    {
+        display: flex;
+        height: 20vw;
+    }
+    .albunsmaistocados2 img 
+    {
+        display: flex;
+        height: 20vw;
+    }
+
+    .album:hover
+    {
+        height: 5rem;
+        min-height: 7.5rem;
+    }
+
+
+    .footermeio
+    {
+        display: flex;
+        position: relative;
+        background-color: #000000;
+    }
+
+    .footermeio h1{
+        display: flex;
+        position: relative;
+        right: 40vw;
+        font-size: 0.9rem;
+    }
+
+    .footermeio img 
+    {
+        display: flex;
+        position: relative;
+        right: 45vw;
+        top: 4vh;
+    }
+
+    .infomeio h1
+    {
+        display: flex;
+        position: relative;
+        right: 45vw;
+        bottom: 3.8vh;
+    }
+
+    .infomeio h2 
+    {
+        display: flex;
+        position: relative;
+        font-size: 0.7rem;
+        right: 45vw;
+        bottom: 3.7vh;
+    }
+
+    footer 
+    {
+        
+    }
+
+    
+
+    
+
 }
+
+
 .ativo{
     visibility: visible;
     pointer-events: all;

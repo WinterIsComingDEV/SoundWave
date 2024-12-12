@@ -336,6 +336,7 @@ fim do footer
     color: rgb(205, 189, 243);
 }
 
+<<<<<<< HEAD
 /*Testando a responsividade*/
 
 @media(max-width: 768px)
@@ -380,3 +381,17 @@ fim do footer
 }
 
 
+=======
+#charadancing{
+    display: flex;
+    padding-bottom: 38vh;
+    position: absolute;
+}
+#chara{
+    width: 10vw;
+    visibility: hidden;
+}
+#passaaqui:hover + #chara{
+    visibility: visible;
+}
+>>>>>>> 16bb412bbb7b6f0bc267f6cf22434bf8cf15d309
