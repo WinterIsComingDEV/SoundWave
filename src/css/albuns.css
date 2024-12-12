@@ -336,3 +336,15 @@ fim do footer
     color: rgb(205, 189, 243);
 }
 
+#charadancing{
+    display: flex;
+    padding-bottom: 38vh;
+    position: absolute;
+}
+#chara{
+    width: 10vw;
+    visibility: hidden;
+}
+#passaaqui:hover + #chara{
+    visibility: visible;
+}
