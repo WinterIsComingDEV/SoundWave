@@ -164,6 +164,62 @@ header{
     padding-left: 20vw;
     padding-top: 3vh;
 }
+.slider {
+    width: 77vw;
+    height: 55vh;
+    margin-left: 20vw;
+    margin-right: 5vw;
+    overflow: hidden;
+}
+
+.slider-imagens {
+    width: 200%; /* 3 imagens lado a lado (3 x 100%) */
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    animation: slide 10s infinite ease; /* 10 segundos para cobrir todas as imagens */
+}
+
+.slider-imagem img {
+    width: 77vw;
+    height: 55vh;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0); /* Primeira imagem */
+    }
+    10%{
+        transform: translateX(0); /* Primeira imagem */
+
+    }
+    20%{
+        transform: translateX(0); /* Primeira imagem */
+    }
+    30%{
+    }
+    40%{
+        transform: translateX(-50%); /* Primeira imagem */
+    }
+    50%{
+        transform: translateX(-50%); /* Primeira imagem */
+    }
+    60%{
+        transform: translateX(-50%); /* Primeira imagem */
+
+    }
+    70%{
+    }
+    80%{
+        transform: translateX(-100%); /* Primeira imagem */
+    }
+    90%{
+        transform: translateX(-100%); /* Primeira imagem */
+    }
+    100%{
+        transform: translateX(-100%); /* Primeira imagem */
+    }
+}
 
 /*MAIS TOCADOS DA SEMANA*/
 .maistocados{
