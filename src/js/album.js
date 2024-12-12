@@ -6,8 +6,8 @@ const maximo = document.getElementById('duracao')
 
 let musica = new Audio();
 let duracao, mudando, musicaPosicao, albumAtual, divAntiga;
-//objeto que guarda arrays
 
+//objeto que guarda arrays
 const albuns = {
   "persona3" : [
     './src/assets/musicas/persona3/FullMoon.mp3',
@@ -31,11 +31,11 @@ const albuns = {
 function tocar() {
   if (musica.paused) {
         musica.play();
-        pausar.src = "./src/assets/imagens/icone/pause.svg"
+        pausar.src = "./src/assets/imagens/icone/pause.svg";
   }
   else{
     musica.pause();
-    pausar.src = "./src/assets/imagens/icone/play.svg"
+    pausar.src = "./src/assets/imagens/icone/play.svg";
 
   }
 }
@@ -60,10 +60,10 @@ function trocar(album, posicao, objeto){
 
 
 function avancar(){
-  musica.currentTime += 15
+  musica.currentTime += 15 //avanca a musica 15 segundos
 }
 function retroceder(){
-  musica.currentTime -=15
+  musica.currentTime -=15 //retrocede a musica 15 segundos
 }
 
 //Carrega os metadados da musica para poder calcular a barra de progresso
