@@ -85,10 +85,54 @@ body{
 #mascote{
     position: absolute;
     right: 350px;
+
     top: 30%;
     width: 500px;
     height: 325px;
     z-index: 0;
+}
+
+/*Testando a responsividade*/
+
+@media(max-width: 768px)
+{
+    body
+    {
+        width: 100%;
+    }
+
+    header
+    {
+     width: 100%;
+     flex-direction: column;
+     justify-content: center;
+    }
+
+    header h1
+    {
+     margin-left:0;
+     margin-bottom: 15px;
+     font-size: 16px;    
+    }
+
+    header a
+    {
+    margin-bottom: 30px;
+    padding: 0;
+    margin: 0;
+    }
+
+    #mascote
+    {
+        position: absolute;
+    }
+
+    .loginholder{
+        width: 50%;
+        padding-left: 50%;
+    }
+
+    
 }
 
 
