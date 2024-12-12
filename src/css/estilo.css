@@ -149,8 +149,19 @@ header{
     font-size: 7rem;
     padding-left: 3vh;
 }
+.menu button{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: transparent;
+    border: none;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+}
 #info{
-    position: a;
     right: 70px;
     top: 0;
 }
@@ -173,11 +184,11 @@ header{
 }
 
 .slider-imagens {
-    width: 200%; /* 3 imagens lado a lado (3 x 100%) */
+    width: 200%; 
     height: 100%;
     display: flex;
     flex-direction: row;
-    animation: slide 10s infinite ease; /* 10 segundos para cobrir todas as imagens */
+    animation: slide 10s infinite ease;
 }
 
 .slider-imagem img {
@@ -187,37 +198,37 @@ header{
 
 @keyframes slide {
     0% {
-        transform: translateX(0); /* Primeira imagem */
+        transform: translateX(0);
     }
     10%{
-        transform: translateX(0); /* Primeira imagem */
+        transform: translateX(0); 
 
     }
     20%{
-        transform: translateX(0); /* Primeira imagem */
+        transform: translateX(0); 
     }
     30%{
     }
     40%{
-        transform: translateX(-50%); /* Primeira imagem */
+        transform: translateX(-50%);
     }
     50%{
-        transform: translateX(-50%); /* Primeira imagem */
+        transform: translateX(-50%);
     }
     60%{
-        transform: translateX(-50%); /* Primeira imagem */
+        transform: translateX(-50%); 
 
     }
     70%{
     }
     80%{
-        transform: translateX(-100%); /* Primeira imagem */
+        transform: translateX(-100%);
     }
     90%{
-        transform: translateX(-100%); /* Primeira imagem */
+        transform: translateX(-100%); 
     }
     100%{
-        transform: translateX(-100%); /* Primeira imagem */
+        transform: translateX(-100%);
     }
 }
 
@@ -326,4 +337,139 @@ HOVER DA PLAYLIST
 a{
     text-decoration: none;
     color: inherit;
+}
+#menubutton{
+    position: relative;
+    left: 0;
+    background-color: transparent;
+    border: none;
+    width: 50px;
+    height: 50px;
+    visibility: hidden;
+}
+
+
+
+@media(max-width: 768px)
+{
+
+    .menu{
+        top:0;
+        left: 0;
+        width: 55vw;
+        z-index: 1;
+        visibility: hidden;
+    }
+    #soundwaveabalateral{
+        font-size: 2rem;
+        margin-left: 35px;
+    }
+    .menu button{ 
+        width: 50px;
+        height: 50px;  
+        visibility: inherit;
+        pointer-events: all;
+    }
+    .menu button img{
+        width: 50px;
+        height: 50px;
+    }
+    .menu nav ul li {
+        font-size: 1.25rem;
+        padding-left: 4vw;
+    } 
+    .menu nav ul li a{
+        font-size: 1.25rem;
+        padding-left: 0vw;
+    }
+    .menu nav ul li img{
+        width: 10vw;
+        height: 10vw;
+        margin-right: 1vw;
+    }
+
+    .playlists h1{
+        color: var(--preto);
+        font-size: 1.5rem;
+    }
+    #playlists{
+        padding-top: 2vh;
+    }
+    .quadrado{
+        width: 15vw;
+        height: 7vh;
+    }
+    .playlist-texto h2
+    {
+        font-size: 1.25rem;
+    }
+    .playlist-texto h3{
+        font-size: 1rem;
+    }
+
+
+
+
+    main{
+        margin-left: 0;
+    }
+    header{
+        margin-left: 0;
+
+    }
+    .titulo{
+        font-size: 2rem;
+        padding-left: 5vw;
+
+    }
+    #menubutton{
+        margin-left: 0;
+        padding: 0;
+    }
+    #logo{
+        width: 100px;
+        height: 100%;
+        padding-left: 0;
+    }
+    #menubutton{
+        visibility: visible;
+    }
+    .triangulo{
+        background: var(--roxopastel);
+    }
+    .quadradologo{
+        width: 100%;
+        padding: 0;
+    }
+    #info{
+        position: absolute;
+        height: 30px;
+        width: 30px;
+        right: 0;
+    }
+    .slider{
+        width: 90vw;
+        height: 30vh;
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+    .slider-imagens {
+        width: 200%; 
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        animation: slide 10s infinite ease;
+    }
+    
+    .slider-imagem img {
+        width: 90vw;
+        height: 25vh;
+    }
+}
+.ativo{
+    visibility: visible;
+    pointer-events: all;
+}
+.desativado{
+    display: none;
 }
