@@ -71,10 +71,15 @@ h1, h2{
     padding-top: 5vh;
 }
 
+#playlists{
+    padding-top: 5vh;
+}
+
 .playlists h1{
     color: var(--preto);
     font-size: 2rem;
 }
+
 
 .quadrado{
     width: 7vh;
@@ -83,7 +88,6 @@ h1, h2{
     margin-right: 1vh;
 }
 .playlist{
-    width: 12vw;
     margin-left: 2vh;
     margin-bottom: 2vh;
     display: flex;
@@ -219,7 +223,7 @@ main{
     margin-left: 5vw;
     margin-top: 7vh;
     font-size: 2rem;
-    width: 500px;
+    width: 50px;
 }
 #musicasplaylist{
     display:Flex;
@@ -457,6 +461,7 @@ footer div{
     {
         width: 15vw;
         height: 7vh;
+        background-color: #000000;
     }
     .playlist-texto h2
     {
@@ -513,10 +518,11 @@ footer div{
     }
 
     footer{
-        display:Flex;
+        display:flex;
+        position: relative;
+        top: 15vh;
+        right: 17vw;
         width: 100vw;   
-        margin-left: -15vw;
-        margin-bottom: -10vh;
     }
     footer h1{
         font-size: 2rem;
@@ -537,6 +543,7 @@ footer div{
         display: flex;
         position: relative;
         top: 1.9vh;
+        
     }
 
     .player
@@ -546,6 +553,44 @@ footer div{
         bottom: 70vh;
         right: 11vw;
     }
+
+    .infomusicadireita  
+    {
+        display: flex;
+        position: relative;
+        right: 10vw;
+        gap: 12px;
+        font-size: 1.4rem;
+    }
+
+    .listadasmusicas
+    {
+        width: 100vw;
+    }
+
+    .tempomusica
+    {
+        display: flex;
+        position: relative;
+        right: 11vw;
+    }
+
+    .botaoplayer
+    {
+        height: 10vh;
+        width: 15vw;
+        gap: 5px;
+        position: relative;
+        right: 2.3vw;
+    }
+
+    .player
+    {
+
+        width: 90vw;
+    }
+
+
 
     
 }

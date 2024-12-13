@@ -73,6 +73,7 @@ h1{
     font-size: 2rem;
 }
 
+
 .quadrado{
     width: 7vh;
     height: 7vh;
@@ -80,7 +81,6 @@ h1{
     margin-right: 1vh;
 }
 .playlist{
-    width: 30vh;
     margin-left: 2vh;
     margin-bottom: 2vh;
     display: flex;
