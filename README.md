@@ -1,3 +1,4 @@
 # SoundWave
 Site de Streaming de Música de Jogos
-joão pedro :
+Projeto no GitHub:
+https://github.com/WinterIsComingDEV/SoundWave

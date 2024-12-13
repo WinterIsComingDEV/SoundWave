@@ -266,7 +266,18 @@ header{
     margin-left: 35vh;
     padding-bottom: 4vw;
 }
+/*outros html*/
+#maps{
+    
+    height: 100vh;
+    width: 100%;
+}
+#cartao{
+    margin-left: 15vw;
+}
 
+/*fim dos outros html
+*/
 .album{
     transition: all 0.7s ease;
     margin: 0;
