@@ -8,7 +8,3 @@ function desativar(){
     menu.classList.remove('ativo');
     console.log("b")
 }
-function logar(event) {
-    event.stopPropagation();  // This will stop the event from bubbling up
-    console.log(event.target);  // Logs the element that was clicked (album-link)
-}
