@@ -425,6 +425,10 @@ a{
 
     .maistocados
     {
+        display: flex;
+        position:relative;
+        left: 1vw;
+        bottom: 10vh;
         font-size: 1rem;
       
     }
@@ -516,9 +520,7 @@ a{
         margin-left: 2vw;
         flex-direction: column;
     }
-    .maistocados{
-        margin-left: 1vw;
-    }
+
     .album:hover{
         width: initial;
         height: initial;
@@ -555,6 +557,34 @@ footer h2{
 
 /*FIM DA RESPONSIVIDADE FOOTER
 */
+
+.album h1 
+{
+    display: flex;
+    position: relative;
+    bottom: 14vh;
+    left: 33vw;
+    font-size: 2rem;
+}
+
+.album2 h1
+{
+    display: flex;
+    position: relative;
+    bottom: 16vh;
+    left: 27.8vw;
+    font-size: 2rem;
+}
+
+.imagemalbum 
+{
+    display: flex;
+    position: relative;
+    left: 19vw;
+    bottom: 15vh;
+    height: 220px;
+    width: 220px;
+}
 
     
 
