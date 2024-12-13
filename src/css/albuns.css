@@ -515,7 +515,10 @@ footer div{
     }
 
     footer{
-        margin-left: 0vw;
+        display:Flex;
+        width: 101vw;   
+        margin-left: -10vw;
+        margin-bottom: -10vh;
     }
     footer h1{
         font-size: 2rem;
@@ -542,7 +545,7 @@ footer div{
     {
         display: flex;
         position:relative;
-        bottom: 95vh;
+        bottom: 80vh;
         right: 11vw;
     }
 
