@@ -37,6 +37,7 @@ h1{
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 1;
 }
 .menu h1{
     padding: center;
@@ -240,7 +241,7 @@ header{
     margin-left: 20vw;
     margin-top: 7vh;
     font-size: 1.8rem;
-    width: 500px;
+
 }
 
 /*ALBUNS MAIS TOCADOS*/
@@ -293,39 +294,36 @@ footer{
     align-items: center;
     background-color: var(--preto);
     color: var(--fontefooter);
+    margin-left: 15vw;
 }
-#cassetinhofooter{
-    width: 15vh;
+
+footer div{
+    margin: 2vw;
+}
+#direitos{
+    display:flex;
 }
 .conteudofooter{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    margin: 5vh;
+    display: Flex;
+    margin-left: 2vw;
+    flex-direction: row;
+    margin: 2vh;
+    margin: 2vw;
 }
-.footermeio{
-    display:flex;
-    justify-content: center;
-    margin-left: 20vh;
-}
-.infomeio{
-    margin: 4vh;
-}
-.footerh1{
-    font-size: 2.5rem;
-    color: var(--azulclaro);
-}
-footer h2:hover{
+.conteudofooter h2:hover{
     color: var(--roxopastel2);
     cursor: pointer;
 }
-.footerdireita{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 
+#cassetinhofooter{
+    width: 15vh;
 }
+
+.footerh1{
+    color:rgb(61, 89, 243);
+    font-size: 2rem;
+}
+
 /*
 fim do footer
 */
@@ -425,9 +423,9 @@ a{
 
     .maistocados
     {
-        font-size: 1.5rem;
+        font-size: 1rem;
+      
     }
-
 
     main{
         margin-left: 0;
@@ -484,106 +482,65 @@ a{
         width: 90vw;
         height: 25vh;
     }
-
-    .maistocados
-    {
-        max-width: 100%;
-        height: auto;
-    }
-
     .album h1
     {
         font-size: small;
     }
-    .album img 
-    {
-        align-content: space-between;
+    .imagemalbum{
+        width: 70vw;
+        
     }
-    .imagemalbum
-    {
-        width: 100%;
-        height: 50%;
+    #albunsdahome{
+        display:flex;
+        flex-direction: column;
+        margin-left: 0vw;
     }
-    .album     
-    {
-        height: 50%;
-    }
-
     .albunsmaistocados 
     {
         display: flex;
-        margin-left: 40px;
+        margin-left: 2vw;
+        flex-direction: column;
+    }
+    .albunsmaistocados:hover
+    {
+        pointer-events: none;
     }
 
     .albunsmaistocados2
     {
         display: flex;
-        margin-left: 40px;
+        margin-left: 2vw;
+        flex-direction: column;
     }
-
-    .albunsmaistocados img
+    .albunsmaistocados2:hover
     {
-        display: flex;
-        height: 20vw;
+        pointer-events: none;
     }
-    .albunsmaistocados2 img 
-    {
-        display: flex;
-        height: 20vw;
+    .maistocados{
+        margin-left: 1vw;
     }
+/* RESPONSIVIDADE FOOTER
 
-    .album:hover
-    {
-        height: 5rem;
-        min-height: 7.5rem;
-    }
+*/
+footer{
+    margin-left: 0vw;
+}
+footer h1{
+    font-size: 2rem;
+}
+footer h2{
+    font-size: 1rem;
+}
+#direitos{
+    display:Flex;
+    flex-direction: column;
+}
+.conteudofooter{
+    flex-direction: column;
+}
 
-
-    .footermeio
-    {
-        display: flex;
-        position: relative;
-        background-color: #000000;
-    }
-
-    .footermeio h1{
-        display: flex;
-        position: relative;
-        right: 40vw;
-        font-size: 0.9rem;
-    }
-
-    .footermeio img 
-    {
-        display: flex;
-        position: relative;
-        right: 45vw;
-        top: 4vh;
-    }
-
-    .infomeio h1
-    {
-        display: flex;
-        position: relative;
-        right: 45vw;
-        bottom: 3.8vh;
-    }
-
-    .infomeio h2 
-    {
-        display: flex;
-        position: relative;
-        font-size: 0.7rem;
-        right: 45vw;
-        bottom: 3.7vh;
-    }
-
-    footer 
-    {
-        
-    }
-
-    
+/*FIM DA RESPONSIVIDADE FOOTER
+*/
 
     
 
