@@ -116,8 +116,8 @@ h1, h2{
 
 }
 #menubutton{
-    position: relative;
-    left: 0;
+    position: absolute;
+    left: 25px;
     background-color: transparent;
     border: none;
     width: 50px;
@@ -561,11 +561,14 @@ footer div{
         right: 10vw;
         gap: 12px;
         font-size: 1.4rem;
+        
+    }
+    .infomusica{
     }
 
     .listadasmusicas
     {
-        width: 100vw;
+        width: 90vw;
     }
 
     .tempomusica
