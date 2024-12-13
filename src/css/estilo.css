@@ -350,7 +350,9 @@ a{
     height: 50px;
     visibility: hidden;
 }
-
+.album-link{
+    width: 100%;
+}
 
 
 @media(max-width: 768px)
@@ -482,13 +484,18 @@ a{
         width: 90vw;
         height: 25vh;
     }
+    .album{
+        width: 70vw;
+        touch-action: none;
+        cursor: pointer;
+    }
     .album h1
     {
         font-size: small;
     }
     .imagemalbum{
         width: 70vw;
-        
+        pointer-events: none
     }
     #albunsdahome{
         display:flex;
@@ -499,11 +506,8 @@ a{
     {
         display: flex;
         margin-left: 2vw;
+        
         flex-direction: column;
-    }
-    .albunsmaistocados:hover
-    {
-        pointer-events: none;
     }
 
     .albunsmaistocados2
@@ -512,13 +516,23 @@ a{
         margin-left: 2vw;
         flex-direction: column;
     }
-    .albunsmaistocados2:hover
-    {
-        pointer-events: none;
-    }
     .maistocados{
         margin-left: 1vw;
     }
+    .album:hover{
+        width: initial;
+        height: initial;
+        background-color: initial;
+        margin-bottom: initial;
+        color: initial;
+        cursor: initial;
+    }
+    .album-link {
+        display: block;
+        text-decoration: none;
+        color: inherit;
+    }
+    
 /* RESPONSIVIDADE FOOTER
 
 */
