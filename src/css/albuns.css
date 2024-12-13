@@ -313,11 +313,9 @@ footer{
     display: flex;
     flex-direction: row;
     position:relative;
-    right: 6vw;
     align-items: center;
     background-color: var(--preto);
     color: var(--fontefooter);
-    margin-left: 15vw;
 }
 
 footer div{
@@ -516,8 +514,8 @@ footer div{
 
     footer{
         display:Flex;
-        width: 101vw;   
-        margin-left: -10vw;
+        width: 100vw;   
+        margin-left: -15vw;
         margin-bottom: -10vh;
     }
     footer h1{
