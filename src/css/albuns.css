@@ -99,6 +99,27 @@ h1, h2{
 #soundwaveabalateral{
     font-size: 3rem;
 }
+.menu button{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: transparent;
+    border: none;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+}
+#menubutton{
+    position: relative;
+    left: 0;
+    background-color: transparent;
+    border: none;
+    width: 50px;
+    height: 50px;
+    visibility: hidden;
+}
 
 .click {
     transition: all 1s ease;
@@ -336,7 +357,6 @@ fim do footer
     color: rgb(205, 189, 243);
 }
 
-<<<<<<< HEAD
 /*Testando a responsividade*/
 
 @media(max-width: 768px)
@@ -345,7 +365,85 @@ fim do footer
     {
         width: 100%;
     }
+    .menu
+    {
+        top:0;
+        left: 0;
+        width: 55vw;
+        z-index: 1;
+        visibility: hidden;
+    }
+    #soundwaveabalateral
+    {
+        font-size: 2rem;
+        margin-left: 35px;
+    }
+    .menu button
+    { 
+        width: 50px;
+        height: 50px;  
+        visibility: inherit;
+        pointer-events: all;
+    }
+    .menu button img
+    {
+        width: 50px;
+        height: 50px;
+    }
+    .menu nav ul li 
+    {
+        font-size: 1.25rem;
+        padding-left: 4vw;
+    } 
+    .menu nav ul li a
+    {
+        font-size: 1.25rem;
+        padding-left: 0vw;
+    }
+    .menu nav ul li img
+    {
+        width: 10vw;
+        height: 10vw;
+        margin-right: 1vw;
+    }
 
+    .playlists h1
+    {
+        color: var(--preto);
+        font-size: 1.5rem;
+    }
+    #playlists
+    {
+        padding-top: 2vh;
+    }
+    .quadrado
+    {
+        width: 15vw;
+        height: 7vh;
+    }
+    .playlist-texto h2
+    {
+        font-size: 1.25rem;
+    }
+    .playlist-texto h3
+    {
+        font-size: 1rem;
+    }
+    #menubutton{
+        margin-left: 0;
+        padding: 0;
+        visibility: visible;
+    }
+    .titulo{
+        font-size: 2rem;
+    }
+    .triangulo{
+        background: var(--roxopastel);
+    }
+    .quadradologo{
+        width: 100%;
+        padding: 0;
+    }
     header
     {
      width: 100%;
@@ -379,19 +477,11 @@ fim do footer
 
     
 }
-
-
-=======
-#charadancing{
-    display: flex;
-    padding-bottom: 38vh;
-    position: absolute;
-}
-#chara{
-    width: 10vw;
-    visibility: hidden;
-}
-#passaaqui:hover + #chara{
+.ativo{
     visibility: visible;
+    pointer-events: all;
 }
->>>>>>> 16bb412bbb7b6f0bc267f6cf22434bf8cf15d309
+.desativado{
+    display: none;
+}
+
