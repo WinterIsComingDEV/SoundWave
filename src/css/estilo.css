@@ -566,7 +566,11 @@ footer h2{
     left: 33vw;
     font-size: 2rem;
 }
-
+.album2{
+    width: 70vw;
+    touch-action: none;
+    cursor: pointer;
+}
 .album2 h1
 {
     display: flex;
