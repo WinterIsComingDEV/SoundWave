@@ -23,6 +23,8 @@ body{
     display:flex;
     flex-direction: column;
     height: 100%;
+    overflow-x: hidden; 
+    overflow-y: auto; 
 }
 
 
@@ -74,11 +76,42 @@ h1{
 }
 
 
-.quadrado{
-    width: 7vh;
-    height: 7vh;
-    background-color: var(--marrom);
-    margin-right: 1vh;
+
+.playlist-texto {
+    margin-left: 10px;
+}
+
+.quadradounder{
+    height: 8vh;
+    width: 8vh;
+    display: flex;
+    border: solid rgb(72, 28, 231);
+}
+.quadradopersona {
+    height: 8vh;
+    width: 8vh;
+    display: flex;
+    border: solid rgb(72, 28, 231);
+}
+
+.quadradodark {
+    height: 8vh;
+    width: 8vh;
+    display: flex;
+    border: solid rgb(72, 28, 231);
+}
+
+.quadradohollow {
+    height: 8vh;
+    width: 8vh;
+    display: flex;
+    border: solid rgb(72, 28, 231);
+}
+.quadradosky {
+    height: 8vh;
+    width: 8vh;
+    display: flex;
+    border: solid rgb(72, 28, 231);
 }
 .playlist{
     margin-left: 2vh;
@@ -210,29 +243,26 @@ header{
     20%{
         transform: translateX(0); 
     }
-    30%{
+    25%{
+        transform: translateX(-50%);
     }
-    40%{
+    45%{
         transform: translateX(-50%);
     }
     50%{
-        transform: translateX(-50%);
-    }
-    60%{
-        transform: translateX(-50%); 
-
+        transform: translateX(-100%);
     }
     70%{
-    }
-    80%{
         transform: translateX(-100%);
+
     }
-    90%{
-        transform: translateX(-100%); 
+    75%{
+        transform: translateX(-150%);
     }
     100%{
-        transform: translateX(-100%);
+        transform: translateX(-150%);
     }
+
 }
 
 /*MAIS TOCADOS DA SEMANA*/
@@ -253,18 +283,18 @@ header{
 
 .albunsmaistocados{
     display:flex;
-    justify-content: space-around;
+    justify-content:space-around;
     margin-top: 10vh;
     font-size: 1.4rem;
     margin-left: 35vh;
 }
+
 .albunsmaistocados2{
     display:flex;
-    margin-top: 10vh;   
     justify-content: space-around;
+    margin-top: 10vh;
     font-size: 1.4rem;
     margin-left: 35vh;
-    padding-bottom: 4vw;
 }
 /*outros html*/
 #maps{
@@ -284,6 +314,8 @@ header{
     width:18vw;
     height: 37vh;
 }
+
+
 .album:hover
 {
     width: 18vw;
@@ -293,6 +325,23 @@ header{
     color: rgb(205, 189, 243);
     cursor: pointer;
 }
+.album2{
+    transition: all 0.7s ease;
+    margin: 0;
+    width:18vw;
+    height: 37vh;
+}
+.album2:hover
+{
+    width: 18vw;
+    height: 45vh;
+    background-color: var(--roxoPrincipal);
+    margin-bottom: -30vh;
+    color: rgb(205, 189, 243);
+    cursor: pointer;
+}
+
+
 /* fim dos albuns mais tocados
 */
 /*FOOTER
@@ -306,6 +355,7 @@ footer{
     background-color: var(--preto);
     color: var(--fontefooter);
     margin-left: 15vw;
+    margin-top: 90px;
 }
 
 footer div{
@@ -503,8 +553,20 @@ a{
         width: 70vw;
         touch-action: none;
         cursor: pointer;
+        margin-bottom: 50px;
     }
+    
     .album h1
+    {
+        font-size: small;
+    }
+    .album2{
+        width: 70vw;
+        touch-action: none;
+        cursor: pointer;
+        margin-bottom: 50px;
+    }
+    .album2 h1
     {
         font-size: small;
     }
@@ -521,7 +583,7 @@ a{
     {
         display: flex;
         margin-left: 2vw;
-        
+        align-items: center;
         flex-direction: column;
     }
 
@@ -529,10 +591,21 @@ a{
     {
         display: flex;
         margin-left: 2vw;
+        margin-top: 3vh;
+        align-items: center;
         flex-direction: column;
     }
 
     .album:hover{
+        width: initial;
+        height: initial;
+        background-color: initial;
+        margin-bottom: initial;
+        color: initial;
+        cursor: initial;
+    }
+
+    .album2:hover{
         width: initial;
         height: initial;
         background-color: initial;
@@ -573,32 +646,19 @@ footer h2{
 {
     display: flex;
     position: relative;
-    bottom: 14vh;
-    left: 33vw;
     font-size: 2rem;
 }
-.album2{
-    width: 70vw;
-    touch-action: none;
-    cursor: pointer;
-}
-.album2 h1
+
+.album2 h1 
 {
     display: flex;
     position: relative;
-    bottom: 16vh;
-    left: 27.8vw;
     font-size: 2rem;
 }
 
 .imagemalbum 
 {
     display: flex;
-    position: relative;
-    left: 19vw;
-    bottom: 15vh;
-    height: 220px;
-    width: 220px;
 }
 
     
