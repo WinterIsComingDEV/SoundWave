@@ -27,7 +27,9 @@ body{
     display:flex;
     flex-direction: column;
     height: 100%;
-    min-height: 100vh
+    min-height: 100vh;
+    overflow-x: hidden; 
+    overflow-y: auto; 
 }
 
 h1, h2{
@@ -80,12 +82,41 @@ h1, h2{
     font-size: 2rem;
 }
 
+.playlist-texto {
+    margin-left: 10px;
+}
 
-.quadrado{
-    width: 7vh;
-    height: 7vh;
-    background-color: var(--marrom);
-    margin-right: 1vh;
+.quadradounder{
+    height: 8vh;
+    width: 8vh;
+    display: flex;
+    border: solid rgb(72, 28, 231);
+}
+.quadradopersona {
+    height: 8vh;
+    width: 8vh;
+    display: flex;
+    border: solid rgb(72, 28, 231);
+}
+
+.quadradodark {
+    height: 8vh;
+    width: 8vh;
+    display: flex;
+    border: solid rgb(72, 28, 231);
+}
+
+.quadradohollow {
+    height: 8vh;
+    width: 8vh;
+    display: flex;
+    border: solid rgb(72, 28, 231);
+}
+.quadradosky {
+    height: 8vh;
+    width: 8vh;
+    display: flex;
+    border: solid rgb(72, 28, 231);
 }
 .playlist{
     margin-left: 2vh;
@@ -562,8 +593,6 @@ footer div{
         gap: 12px;
         font-size: 1.4rem;
         
-    }
-    .infomusica{
     }
 
     .listadasmusicas
