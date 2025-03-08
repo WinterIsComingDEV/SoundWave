@@ -25,31 +25,31 @@ const albuns = {
     './src/assets/musicas/undertale/ruins.mp3',
   ],
   "hollow": [
-   '/src/assets/musicas/hollow/dirtmouth.mp3',
-   '/src/assets/musicas/hollow/greenpath.mp3',
-   '/src/assets/musicas/hollow/crystalpeak.mp3',
+   './src/assets/musicas/hollow/dirtmouth.mp3',
+   './src/assets/musicas/hollow/greenpath.mp3',
+   './src/assets/musicas/hollow/crystalpeak.mp3',
 
   ],
   "sky": [
-    '/src/assets/musicas/sky/dovahkiin.mp3',
-    '/src/assets/musicas/sky/dragonborn.mp3',
-    'src/assets/musicas/sky/thestreetofvhiterun.mp3',
+    './src/assets/musicas/sky/dovahkiin.mp3',
+    './src/assets/musicas/sky/dragonborn.mp3',
+    './src/assets/musicas/sky/thestreetofvhiterun.mp3',
   ],
   "tlou": [
-    '/src/assets/musicas/tlou/allgone(noescape).mp3',
-    '/src/assets/musicas/tlou/thechoice.mp3',
-    '/src/assets/musicas/tlou/thelastofus.mp3',
+    './src/assets/musicas/tlou/allgone(noescape).mp3',
+    './src/assets/musicas/tlou/thechoice.mp3',
+    './src/assets/musicas/tlou/thelastofus.mp3',
   ],
 
   "mine": [
-    '/src/assets/musicas/mine/ariamath.mp3',
-    '/src/assets/musicas/mine/sweden.mp3',
-    '/src/assets/musicas/mine/wethands.mp3',
+    './src/assets/musicas/mine/ariamath.mp3',
+    './src/assets/musicas/mine/sweden.mp3',
+    './src/assets/musicas/mine/wethands.mp3',
   ],
   "god": [
-    '/src/assets/musicas/god/godofwar.mp3.mp3',
-    '/src/assets/musicas/god/peaks pass.mp3',
-    '/src/assets/musicas/god/Mimir.mp3',
+    './src/assets/musicas/god/godofwar.mp3.mp3',
+    './src/assets/musicas/god/peaks pass.mp3',
+    './src/assets/musicas/god/Mimir.mp3',
   ],
 }
 
