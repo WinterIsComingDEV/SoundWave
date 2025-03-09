@@ -487,11 +487,13 @@ a{
     .maistocados
     {
         display: flex;
-        position:relative;
-        left: 1vw;
-        bottom: 10vh;
         font-size: 1rem;
-      
+        justify-content: center;
+        margin: 0;
+    }
+    .maistocados h1{
+        justify-content: center;
+        align-items: center;
     }
 
     main{
@@ -554,6 +556,10 @@ a{
         touch-action: none;
         cursor: pointer;
         margin-bottom: 50px;
+        touch-action: manipulation;
+    }
+    .album:hover{
+        
     }
     
     .album h1
@@ -565,6 +571,7 @@ a{
         touch-action: none;
         cursor: pointer;
         margin-bottom: 50px;
+        touch-action: manipulation;
     }
     .album2 h1
     {
