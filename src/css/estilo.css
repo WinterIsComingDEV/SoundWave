@@ -1,0 +1,682 @@
+@import url('https://fonts.googleapis.com/css2?family=Jockey+One&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --roxoPrincipal: #420094;
+    --preto: #000000;
+    --marrom: #1E0101;
+    --cinza: #6F6F6F;
+    --roxopastel: rgba(240, 223, 255, 1);
+    --abalateral: rgba(173, 172, 233, 1);
+    --fontefooter: white;
+    --rosa: rgb(245, 107, 137);
+    --azulclaro: rgb(61, 89, 243);
+    --roxopastel2: rgb(214, 110, 255);
+}
+body{
+    display:flex;
+    flex-direction: column;
+    height: 100%;
+    overflow-x: hidden; 
+    overflow-y: auto; 
+}
+
+
+h1{
+    font-family: "Jockey One", sans-serif;
+}
+
+.menu{
+    width: 35vh;
+    background-color: var(--abalateral);
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.menu h1{
+    padding: center;
+    padding-left: 2vh;
+    font-size: 3rem;
+    color: var(--roxoPrincipal) 
+}
+.menu nav ul li{
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    padding-left: 25px;
+}
+.menu nav ul li img{
+    width: 5vh;
+    height: 5vh;
+    margin-right: 1vh;
+}
+.menu nav ul li a{
+    color: var(--preto);
+    text-decoration: none;
+    font-family: "Jockey One", sans-serif;
+    font-size: 2rem;
+    padding: 2vh;
+}
+
+#playlists{
+    padding-top: 5vh;
+}
+
+.playlists h1{
+    color: var(--preto);
+    font-size: 2rem;
+}
+
+
+
+.playlist-texto {
+    margin-left: 10px;
+}
+
+.quadradounder{
+    height: 8vh;
+    width: 8vh;
+    display: flex;
+    border: solid rgb(72, 28, 231);
+}
+.quadradopersona {
+    height: 8vh;
+    width: 8vh;
+    display: flex;
+    border: solid rgb(72, 28, 231);
+}
+
+.quadradodark {
+    height: 8vh;
+    width: 8vh;
+    display: flex;
+    border: solid rgb(72, 28, 231);
+}
+
+.quadradohollow {
+    height: 8vh;
+    width: 8vh;
+    display: flex;
+    border: solid rgb(72, 28, 231);
+}
+.quadradosky {
+    height: 8vh;
+    width: 8vh;
+    display: flex;
+    border: solid rgb(72, 28, 231);
+}
+.playlist{
+    margin-left: 2vh;
+    margin-bottom: 2vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: "Jockey One", sans-serif;
+
+}
+.playlist h3{
+    color: var(--cinza)
+}
+
+#soundwaveabalateral{
+    font-size: 3rem;
+}
+
+.click {
+    transition: all 1s ease;
+}
+.click a{
+    transition: all 1s ease;
+}
+.click:hover{
+    background-color: var(--roxoPrincipal);
+    color: var(--roxopastel);
+    cursor: pointer;
+}
+
+.click:hover a{
+    font-size: 2.2rem;
+}
+/*FAZENDO O HEADER*/
+header{
+    display: flex;
+    width: 100vw;
+    height: 20vh;
+}
+.logoholder {
+    display: flex; 
+    width: 100%;  
+    height: 100%;  
+}
+
+.quadradologo{
+    padding-left: 50px;
+    display: flex;
+    width: 90%;
+    height: 15vh;
+    background-color: var(--roxopastel);
+    align-items: center;
+    justify-content: center;
+}
+.triangulo{
+    width: 10%;
+    height: 15vh;
+    background: linear-gradient(to bottom right,var(--roxopastel) 50%, white 50%);
+    flex: 1;
+}
+#logo{
+    width: 250px;;
+    height: 100%;
+    padding-left: 3vh;
+    padding-bottom: 1vh;
+}
+
+.titulo{
+    color: var(--roxoPrincipal);
+    font-size: 7rem;
+    padding-left: 3vh;
+}
+.menu button{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: transparent;
+    border: none;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+}
+#info{
+    right: 70px;
+    top: 0;
+}
+/*fim do header*/
+/*COMEÇANDO A BANNER */
+#banner{
+    display:flex;
+    flex-direction: column;
+    height: 55vh;
+    width: 97vw;
+    padding-left: 20vw;
+    padding-top: 3vh;
+}
+.slider {
+    width: 77vw;
+    height: 55vh;
+    margin-left: 20vw;
+    margin-right: 5vw;
+    overflow: hidden;
+}
+
+.slider-imagens {
+    width: 200%; 
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    animation: slide 10s infinite ease;
+}
+
+.slider-imagem img {
+    width: 77vw;
+    height: 55vh;
+    display: block;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    10%{
+        transform: translateX(0); 
+
+    }
+    20%{
+        transform: translateX(0); 
+    }
+    25%{
+        transform: translateX(-50%);
+    }
+    45%{
+        transform: translateX(-50%);
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    70%{
+        transform: translateX(-100%);
+
+    }
+    75%{
+        transform: translateX(-150%);
+    }
+    100%{
+        transform: translateX(-150%);
+    }
+
+}
+
+/*MAIS TOCADOS DA SEMANA*/
+.maistocados{
+    display: flex;
+    margin-left: 20vw;
+    margin-top: 7vh;
+    font-size: 1.8rem;
+
+}
+
+/*ALBUNS MAIS TOCADOS*/
+.imagemalbum{
+    width: 18vw;
+    height: 35vh;
+    transition: all 1s ease;
+}
+
+.albunsmaistocados{
+    display:flex;
+    justify-content:space-around;
+    margin-top: 10vh;
+    font-size: 1.4rem;
+    margin-left: 35vh;
+}
+
+.albunsmaistocados2{
+    display:flex;
+    justify-content: space-around;
+    margin-top: 10vh;
+    font-size: 1.4rem;
+    margin-left: 35vh;
+}
+/*outros html*/
+#maps{
+    
+    height: 100vh;
+    width: 100%;
+}
+#cartao{
+    margin-left: 15vw;
+}
+
+/*fim dos outros html
+*/
+.album{
+    transition: all 0.7s ease;
+    margin: 0;
+    width:18vw;
+    height: 37vh;
+}
+
+
+.album:hover
+{
+    width: 18vw;
+    height: 45vh;
+    background-color: var(--roxoPrincipal);
+    margin-bottom: -30vh;
+    color: rgb(205, 189, 243);
+    cursor: pointer;
+}
+.album2{
+    transition: all 0.7s ease;
+    margin: 0;
+    width:18vw;
+    height: 37vh;
+}
+.album2:hover
+{
+    width: 18vw;
+    height: 45vh;
+    background-color: var(--roxoPrincipal);
+    margin-bottom: -30vh;
+    color: rgb(205, 189, 243);
+    cursor: pointer;
+}
+
+
+/* fim dos albuns mais tocados
+*/
+/*FOOTER
+*/
+footer{
+    display: flex;
+    flex-direction: row;
+    position:relative;
+    right: 1vw;
+    align-items: center;
+    background-color: var(--preto);
+    color: var(--fontefooter);
+    margin-left: 15vw;
+    margin-top: 90px;
+}
+
+footer div{
+    margin: 2vw;
+}
+#direitos{
+    display:flex;
+}
+.conteudofooter{
+    display: Flex;
+    margin-left: 2vw;
+    flex-direction: row;
+    margin: 2vh;
+    margin: 2vw;
+}
+.conteudofooter h2:hover{
+    color: var(--roxopastel2);
+    cursor: pointer;
+}
+
+#cassetinhofooter{
+    width: 15vh;
+}
+
+.footerh1{
+    color:rgb(61, 89, 243);
+    font-size: 2rem;
+}
+
+/*
+fim do footer
+*/
+
+/*
+HOVER DA PLAYLIST
+*/
+
+.playlist:hover{
+    background-color: var(--roxoPrincipal);
+    cursor: pointer;
+    color: rgb(205, 189, 243);
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+#menubutton{
+    position: relative;
+    left: 0;
+    background-color: transparent;
+    border: none;
+    width: 50px;
+    height: 50px;
+    visibility: hidden;
+}
+.album-link{
+    width: 100%;
+}
+
+
+@media(max-width: 768px)
+{
+
+    .menu
+    {
+        top:0;
+        left: 0;
+        width: 55vw;
+        z-index: 1;
+        visibility: hidden;
+    }
+    #soundwaveabalateral
+    {
+        font-size: 2rem;
+        margin-left: 35px;
+    }
+    .menu button
+    { 
+        width: 50px;
+        height: 50px;  
+        visibility: inherit;
+        pointer-events: all;
+    }
+    .menu button img
+    {
+        width: 50px;
+        height: 50px;
+    }
+    .menu nav ul li 
+    {
+        font-size: 1.25rem;
+        padding-left: 4vw;
+    } 
+    .menu nav ul li a
+    {
+        font-size: 1.25rem;
+        padding-left: 0vw;
+    }
+    .menu nav ul li img
+    {
+        width: 10vw;
+        height: 10vw;
+        margin-right: 1vw;
+    }
+
+    .playlists h1
+    {
+        color: var(--preto);
+        font-size: 1.5rem;
+    }
+    #playlists
+    {
+        padding-top: 2vh;
+    }
+    .quadrado
+    {
+        width: 15vw;
+        height: 7vh;
+    }
+    .playlist-texto h2
+    {
+        font-size: 1.25rem;
+    }
+    .playlist-texto h3
+    {
+        font-size: 1rem;
+    }
+
+    .maistocados
+    {
+        display: flex;
+        font-size: 1rem;
+        justify-content: center;
+        margin: 0;
+    }
+    .maistocados h1{
+        justify-content: center;
+        align-items: center;
+    }
+
+    main{
+        margin-left: 0;
+    }
+    header{
+        margin-left: 0;
+
+    }
+    .titulo{
+        font-size: 2rem;
+        padding-left: 5vw;
+
+    }
+    #menubutton{
+        margin-left: 0;
+        padding: 0;
+    }
+    #logo{
+        width: 100px;
+        height: 100%;
+        padding-left: 0;
+    }
+    #menubutton{
+        visibility: visible;
+    }
+    .triangulo{
+        background: var(--roxopastel);
+    }
+    .quadradologo{
+        width: 100%;
+        padding: 0;
+    }
+    #info{
+        position: absolute;
+        height: 30px;
+        width: 30px;
+        right: 0;
+    }
+    .slider{
+        width: 90vw;
+        height: 30vh;
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+    .slider-imagens {
+        width: 200%; 
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        animation: slide 10s infinite ease;
+    }
+    
+    .slider-imagem img {
+        width: 90vw;
+        height: 25vh;
+    }
+    .album{
+        width: 70vw;
+        touch-action: none;
+        cursor: pointer;
+        margin-bottom: 50px;
+        touch-action: manipulation;
+    }
+    .album:hover{
+        
+    }
+    
+    .album h1
+    {
+        font-size: small;
+    }
+    .album2{
+        width: 70vw;
+        touch-action: none;
+        cursor: pointer;
+        margin-bottom: 50px;
+        touch-action: manipulation;
+    }
+    .album2 h1
+    {
+        font-size: small;
+    }
+    .imagemalbum{
+        width: 70vw;
+        pointer-events: none
+    }
+    #albunsdahome{
+        display:flex;
+        flex-direction: column;
+        margin-left: 0vw;
+    }
+    .albunsmaistocados 
+    {
+        display: flex;
+        margin-left: 2vw;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .albunsmaistocados2
+    {
+        display: flex;
+        margin-left: 2vw;
+        margin-top: 3vh;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .album:hover{
+        width: initial;
+        height: initial;
+        background-color: initial;
+        margin-bottom: initial;
+        color: initial;
+        cursor: initial;
+    }
+
+    .album2:hover{
+        width: initial;
+        height: initial;
+        background-color: initial;
+        margin-bottom: initial;
+        color: initial;
+        cursor: initial;
+    }
+    .album-link {
+        display: block;
+        text-decoration: none;
+        color: inherit;
+    }
+    
+/* RESPONSIVIDADE FOOTER
+
+*/
+footer{
+    margin-left: 0vw;
+}
+footer h1{
+    font-size: 2rem;
+}
+footer h2{
+    font-size: 1rem;
+}
+#direitos{
+    display:Flex;
+    flex-direction: column;
+}
+.conteudofooter{
+    flex-direction: column;
+}
+
+/*FIM DA RESPONSIVIDADE FOOTER
+*/
+
+.album h1 
+{
+    display: flex;
+    position: relative;
+    font-size: 2rem;
+}
+
+.album2 h1 
+{
+    display: flex;
+    position: relative;
+    font-size: 2rem;
+}
+
+.imagemalbum 
+{
+    display: flex;
+}
+
+    
+
+}
+
+
+.ativo{
+    visibility: visible;
+    pointer-events: all;
+}
+.desativado{
+    display: none;
+}

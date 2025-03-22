@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoundWave</title>
+    <link rel="stylesheet" href="src/css/albuns.css">
+    <link rel="shortcut icon" href="./src/assets/imagens/icone.png">
+</head>
+<body>
+    <div class="menu">
+        <button onClick="desativar()"><img src="./src/assets/imagens/icone/close.svg"></button>
+        <h1 id="soundwaveabalateral">SOUNDWAVE</h1>
+        <nav>
+            <ul>
+                <li class="click"><img src = "./src/assets/imagens/iconehome2.svg"><a href="./home.html">Home</a></li>
+                <li class="click"><img src="./src/assets/imagens/iconsexplorar2.svg"><a>Explorar</a></li>
+            </ul>
+        </nav>
+        <div class="playlists">
+            <div class="playlist"></div>
+            <h1 id="playlists">Playlists</h1>
+            <div class="playlist">
+                <a href="undertale.html">
+                <div class="quadradounder"><img src="src/assets/imagens/undertalealbum.jpeg"></div>
+                <div class="playlist-texto">
+                    <h2>Undertale</h2>
+                    <h3>RPG, Indie</h3>
+                </a>
+                </div>
+            </div>
+            <div class="playlist">
+               <a href="persona3.html"><div class="quadradopersona"><img src="src/assets/imagens/persona3album.jpg"></div>
+                <div class="playlist-texto">
+                    <h2>Persona 3</h2>
+                    <h3>JRPG, Aventura</h3>
+                </a>
+                </div>
+            </div>
+            <div class="playlist">
+                <a href="ds3.html"><div class="quadradodark"><img src="src/assets/imagens/Cinder - Copia.jpg"></div>
+                <div class="playlist-texto">
+                    <h2>Dark Souls 3</h2>
+                    <h3>RPG, Soulsike</h3>
+                </a>
+                </div>
+            </div>
+            <div class="playlist">
+                <a href="hollow.html"><div class="quadradohollow"><img src="src/assets/imagens/hollowalbum.jpeg"></div>
+                <div class="playlist-texto">
+                    <h2>Hollow Knight</h2>
+                    <h3>Metroidvania, indie</h3>
+                </a>
+                </div>
+            </div>
+            <div class="playlist">
+                <a href="sky.html"><div class="quadradosky"><img src="src/assets/imagens/skyrimalbum.jpg"></div>
+                <div class="playlist-texto">
+                    <h2>Skyrim</h2>
+                    <h3>Rpg, Aventura</h3>
+                </a>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <!--HEADER >>> NOME SOUNDWAVE E A IMAGEM DO CASSETINHO + INFO ÍCONE-->
+    <section>
+       <header>
+        <div class="logoholder">
+            
+            <div class="quadradologo">
+                <button id="menubutton" onclick="ativar()"><img src="./src/assets/imagens/icone/menu.svg"></button>
+                <h1 class="titulo">Minecraft</h1>
+            </div>
+            <div class="triangulo">
+                <a href="#footer"><img src="./src/assets/imagens/infoicone.png" id="info"></a>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- FIM DO HEADER   -->
+    <main>
+        <!--FAZENDO O BANNER-->
+        <div class="infomusica">
+            <h2>*Sandbox *Sobrevivência</h2>
+            <div class="infomusicadireita">
+                <H2>Lançamento: 2009</H2>
+                <h2>Duração:2H6m</h2>
+            </div>
+        </div>
+        <div>
+            <img id="banner" src="./src/assets/gif/minegif.gif">
+        </div>
+       <!--fim do banner-->
+        <div class="maistocados">
+            <h1>Músicas</h1>
+        </div>
+        <section id="musicasplaylist">
+            <div class="listadasmusicas" id="musica0">
+                <button class="playmusic" onclick="trocar('mine', 0, this)"><img src="./src/assets/imagens/icone/play.svg"></button>
+                <h1 class="titulomusica">C418</h1>
+                <h1 class="tempomusica">5:45m</h1>
+            </div>
+            <div class="listadasmusicas" id="musica1">
+                <button class="playmusic" onclick="trocar('mine', 1, this)"><img src="./src/assets/imagens/icone/play.svg"></button>
+                <h1 class="titulomusica">Sweden</h1>
+                <h1 class="tempomusica">4:02m</h1>
+            </div>
+            <div class="listadasmusicas" id="musica2">
+                <button class="playmusic" onclick="trocar('mine', 2, this)"><img src="./src/assets/imagens/icone/play.svg"></button>
+                <h1 class="titulomusica">Wet Hands</h1>
+                <h1 class="tempomusica">1:30m</h1>
+            </div>
+        </section>
+        <footer id="footer">
+            <section class="conteudofooter">
+                <section id="direitos">
+                <div>
+                    <h1>@2024-todos os direitos reservados</h1>
+                    <img id="cassetinhofooter" src="./src/assets/imagens/cassetemascote.png">
+                </div>    
+                <div class="infomeio">
+                    <h1 class="footerh1">Atendimento</h1>
+                    <h2>Fale Conosco</h2>
+                    <h2>Contato</h2>
+                    <h2>Locais</h2>
+                </div>
+                <div class="infomeio">
+                    <h1 class="footerh1">Informações</h1>
+                    <h2>Perguntas Frequentes</h2>
+                    <h2>Privacidade</h2>
+                    <h2>Termos de Serviço</h2>
+                </div>
+                <div class="infomeio">
+                    <h1 class="footerh1">Trabalhe Conosco</h1>
+                    <h2>Currículo</h2>
+                    <h2>Parcerias</h2>
+                </div>
+            </section>   
+        </section>
+        </footer>
+<div class="player">
+    <div class="playerfuncional">
+        <div class="botoesplayer">
+            <button class="botaoplayer" onclick="anterior()">
+                <img src="./src/assets/imagens/icone/back.svg">
+            </button>
+            <button class="botaoplayer" onclick="retroceder()">
+                <img src="./src/assets/imagens/icone/rewind.svg">
+            </button>
+            <button class="botaoplayer" onclick="tocar()">
+                <img src="./src/assets/imagens/icone/play.svg" id="pausar">
+            </button>
+            <button class="botaoplayer" onclick="avancar()">
+                <img src="./src/assets/imagens/icone/next.svg">
+            </button>
+            <button class="botaoplayer" onclick="proximo()">
+                <img src="./src/assets/imagens/icone/foward.svg">
+            </button>
+        </div>
+        <div class="barraprogresso">
+            <h3 id="atual">0:00</h3>
+            <input type="range" id="progressbar" value=0>
+            <h3 id="duracao">9:99</h3>
+        </div>
+
+    </div>
+</div>
+<script src="./src/js/album.js"></script>
+<script src="./src/js/script.js"></script>
+ 
+</body>
+</html>

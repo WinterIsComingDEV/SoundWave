@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoundWave</title>
+    <link rel="stylesheet" href="./src/css/estilo.css">
+    <link rel="shortcut icon" href="./src/assets/imagens/icone.png">
+</head>
+<body>
+    <div class="menu">
+        <button onClick="desativar()"><img src="./src/assets/imagens/icone/close.svg"></button>
+        <h1 id="soundwaveabalateral">SOUNDWAVE</h1>
+        <nav>
+            <ul>
+                <li class="click"><img src = "./src/assets/imagens/iconehome2.svg"><a href="#">Home</a></li>
+                <li class="click"><img src="./src/assets/imagens/iconsexplorar2.svg"><a>Explorar</a></li>
+            </ul>
+        </nav>
+        <div class="playlists">
+            <div class="playlist"></div>
+            <h1 id="playlists">Playlists</h1>
+            <div class="playlist">
+                <a href="undertale.html">
+                <div class="quadradounder"><img src="src/assets/imagens/undertalealbum.jpeg"></div>
+                <div class="playlist-texto">
+                    <h2>Undertale</h2>
+                    <h3>RPG, Indie</h3>
+                </a>
+                </div>
+            </div>
+            <div class="playlist">
+               <a href="persona3.html"><div class="quadradopersona"><img src="src/assets/imagens/persona3album.jpg"></div>
+                <div class="playlist-texto">
+                    <h2>Persona 3</h2>
+                    <h3>JRPG, Aventura</h3>
+                </a>
+                </div>
+            </div>
+            <div class="playlist">
+                <a href="ds3.html"><div class="quadradodark"><img src="src/assets/imagens/Cinder - Copia.jpg"></div>
+                <div class="playlist-texto">
+                    <h2>Dark Souls 3</h2>
+                    <h3>RPG, Soulsike</h3>
+                </a>
+                </div>
+            </div>
+            <div class="playlist">
+                <a href="hollow.html"><div class="quadradohollow"><img src="src/assets/imagens/hollowalbum.jpeg"></div>
+                <div class="playlist-texto">
+                    <h2>Hollow Knight</h2>
+                    <h3>Metroidvania, indie</h3>
+                </a>
+                </div>
+            </div>
+            <div class="playlist">
+                <a href="sky.html"><div class="quadradosky"><img src="src/assets/imagens/skyrimalbum.jpg"></div>
+                <div class="playlist-texto">
+                    <h2>Skyrim</h2>
+                    <h3>Rpg, Aventura</h3>
+                </a>
+                </div>
+            </div>
+        </div>
+    </div>  
+    <!--HEADER >>> NOME SOUNDWAVE E A IMAGEM DO CASSETINHO + INFO ÍCONE-->
+    <section>
+       <header>
+        <div class="logoholder">
+            <div class="quadradologo">
+                <button id="menubutton" onclick="ativar()"><img src="./src/assets/imagens/icone/menu.svg"></button>
+                <H1 class="titulo">SOUNDWAVE</H1>
+                <img src="./src/assets/imagens/cassetemascote.png" id="logo">
+            </div>
+            <div class="triangulo">
+                <a href="#footer"><img src="./src/assets/imagens/infoicone.png" id="info"></a>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- FIM DO HEADER   -->
+    <main>
+        <div class="slider">
+            <div class="slider-imagens">
+                <div class="slider-imagem">
+                    <a href="persona3.html"><img src="./src/assets/imagens/banner/persona3.png"></a>
+                </div>
+                <div class="slider-imagem">
+                   <a href="undertale.html"> <img src="./src/assets/imagens/banner/undertale.png"></a>
+                </div>
+                <div class="slider-imagem">
+                    <a href="ds3.html"><img src="./src/assets/imagens/banner/ds3.webp"></a>
+                </div>
+                <div class="slider-imagem">
+                    <a href="hollow.html"><img src="src/assets/gif/hollowknight.gif"></a>
+                </div>
+            </div>
+        </div>
+        <!--fim do banner-->
+        <div class="maistocados">
+            <h1>MAIS TOCADOS DA SEMANA</h1>
+            </div>
+            <div class="albunsmaistocados">
+                <div class="album">
+                    <a href="undertale.html" class="album-link" >
+                        <img class="imagemalbum" src="./src/assets/imagens/undertalealbum.jpeg">
+                        <h1>Undertale</h1>
+                    </a>
+                </div>
+                <div class="album">
+                    <a href="persona3.html" class="album-link" >
+                        <img class="imagemalbum" src="./src/assets/imagens/persona3album.jpg">
+                        <h1>Persona 3</h1>
+                    </a>
+                </div>
+                <div class="album">
+                    <a href="ds3.html" class="album-link" >
+                        <img class="imagemalbum" src="./src/assets/imagens/Cinder.jpg">
+                        <h1>Dark Souls 3</h1>
+                    </a>
+                </div>
+                <div class="album">
+                    <a href="hollow.html" class="album-link" >
+                        <img class="imagemalbum" src="./src/assets/imagens/hollowalbum.jpeg">
+                        <h1>Hollow Knight</h1>
+                    </a>
+                </div>
+            </div>
+            <div class="albunsmaistocados2 ">
+                <div class="album2">
+                    <a href="sky.html" class="album-link" >
+                        <img class="imagemalbum" src="./src/assets/imagens/skyrimalbum.jpg">
+                        <h1>Skyrim</h1>
+                    </a>
+                </div>
+                <div class="album2">
+                    <a href="tlou.html" class="album-link" >
+                        <img class="imagemalbum" src="./src/assets/imagens/thelastofusalbum.jpg">
+                        <h1>The Last of Us</h1>
+                    </a>
+                </div>
+                <div class="album2">
+                    <a href="mine.html" class="album-link" >
+                        <img class="imagemalbum" src="./src/assets/imagens/minekraftalbum.jpg">
+                        <h1>Minecraft</h1>
+                    </a>
+                </div>
+                <div class="album2">
+                    <a href="god.html" class="album-link" >
+                        <img class="imagemalbum" src="./src/assets/imagens/godofwaralbum.jpeg">
+                        <h1>God of War</h1>
+                    </a>
+                </div>
+            </div>
+    </main>
+<footer id="footer">
+    <section class="conteudofooter">
+        <section id="direitos">
+        <div>
+            <h1>@2024-todos os direitos reservados</h1>
+            <img id="cassetinhofooter" src="./src/assets/imagens/cassetemascote.png">
+        </div>    
+        <div class="infomeio">
+            <h1 class="footerh1">Atendimento</h1>
+           <a href="faleconosco.html"> <h2>Fale Conosco</h2></a>
+            <h2>Contato</h2>
+            <a href="./local.html"><h2>Locais</h2></a>
+        </div>
+        <div class="infomeio">
+            <h1 class="footerh1">Informações</h1>
+            <h2>Perguntas Frequentes</h2>
+            <h2>Privacidade</h2>
+            <h2>Termos de Serviço</h2>
+        </div>
+        <div class="infomeio">
+            <h1 class="footerh1">Trabalhe Conosco</h1>
+            <h2>Currículo</h2>
+            <h2>Parcerias</h2>
+        </div>
+    </section>   
+</section>
+</footer>
+ <script src="./src/js/script.js"></script>
+</body>
+</html>
