@@ -127,7 +127,7 @@ h1{
 }
 
 #soundwaveabalateral{
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 .click {
@@ -558,10 +558,6 @@ a{
         margin-bottom: 50px;
         touch-action: manipulation;
     }
-    .album:hover{
-        
-    }
-    
     .album h1
     {
         font-size: small;
